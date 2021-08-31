@@ -1,0 +1,155 @@
+:root {
+    --violeta: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--violeta);
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-bottom: 2rem;
+}
+
+.attribution a { 
+    color: black; 
+}
+
+.header__logo{
+    padding-bottom: 3rem;
+}
+
+.header__imagen img{
+    width: 100%;
+}
+
+.header__contenedor{
+    padding: 1rem;
+}
+
+.header__contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__info {
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+}
+
+.header__titulo{
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Poppins' !important;
+    padding-bottom: 2rem;
+}
+
+.header__texto {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.header__btn {
+    background-color: white;
+    color: var(--violeta);
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem 5rem;
+    border-radius: 25rem;
+    border: none;
+    text-align: center;
+    position: relative;
+    transform: translate(22%);
+}
+
+.header__btn:hover{
+    background-color: var(--magenta);
+    transition: 500ms ease;
+}
+
+.header__redes{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+
+.header__link{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.header__link:hover, i:hover{
+    border-color:var(--magenta);
+    color:var(--magenta);
+    transition: 500ms ease;
+}
+
+@media (min-width: 376px){
+    body{
+        background-image: url(../images/bg-desktop.svg);
+    }
+    .header__contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .header__contenedor{
+        padding: 2rem 5rem;
+    }
+
+    .header__imagen img{
+        width: 100%;
+    }
+
+    .header__titulo{
+        font-family: 'Poppins' !important;
+        font-weight: 600;
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+        text-align: left;
+    }
+    .header__texto{
+        text-align: left;
+        font-size: 1.05rem;
+    }
+    .header__btn{
+        transform: translate(0%);
+    }
+    .header__info {
+        width: 30rem;
+    }
+    .header__redes{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    .attribution { 
+        padding-bottom: 0;
+    }
+    .header__redes{
+        padding-bottom: 0;
+    }
+}
