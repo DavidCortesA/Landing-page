@@ -14,7 +14,7 @@
 
 body{
     background-color: var(--violeta);
-    background-image: url(../images/bg-mobile.svg);
+    background-image: url(../imagen/bg-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -107,7 +107,7 @@ body{
 
 @media (min-width: 376px){
     body{
-        background-image: url(../images/bg-desktop.svg);
+        background-image: url(../imagen/bg-desktop.svg);
     }
     .header__contenido{
         display: flex;
